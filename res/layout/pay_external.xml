@@ -1,0 +1,117 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:background="#FFFEF2"
+            android:gravity="center_vertical"
+            android:text="还差最后一步，请尽快付款：）"
+            android:textColor="#ff8000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="支付方式："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_zfb" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="应付金额："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+		    <TextView 
+		        android:layout_width="wrap_content"
+            	android:layout_height="35dp"
+            	android:layout_marginLeft="10dp"
+            	android:gravity="center_vertical"
+            	android:text="￥"
+		        android:textColor="#FF4500"
+		        android:textSize="20sp" />
+
+		    <TextView
+		        android:id="@+id/jin_pay"
+		        android:layout_width="wrap_content"
+		        android:layout_height="35dp"
+		        android:layout_marginLeft="2dp"
+		        android:gravity="center_vertical"
+		        android:text="666"
+		        android:textColor="#FF4500"
+		        android:textSize="20sp" />
+		    
+		</LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/biankuangqianhuang_tianchongsedanhuang"
+            android:gravity="center_vertical"
+            android:text="@string/order_tixing"
+            android:textColor="#F7B7FA"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:text="立即支付"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+
+
+<!--  
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="支付"
+            tools:ignore="HardcodedText" />
+        
+        <Button
+            android:id="@+id/check"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="检查账户"
+            tools:ignore="HardcodedText" />
+            -->
+    </LinearLayout>
+
+</ScrollView>

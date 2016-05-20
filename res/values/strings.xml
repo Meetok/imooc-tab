@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">米到仓</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="top_search"></string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="mianshui">免税规则：每笔订单税额50员一下免税：税额=税率*售价；该商品税率为10%。</string>
+    <string name="goumaishuoming">结算标准：\n国内结算标准：快递费按米到仓跨境仓签约的快递公司资费标准，统一通过物流专用金的方式在推送海关时结算。
+	\n美国结算标准：每笔订单收取20元物流费。
+	\n新西兰结算标准：每笔订单首重36元/KG，续重36元/KG。 </string>
+    <string name="order_tixing">请在72小时内完成付款，否则特卖结束或者商品售光后您的订单将被取消或者关闭。</string>
+    <!-- 新增订单 -->
+    <string name="zhuyi">注意：务必填写真实身份证信息用于海关审核，错误的信息将导致审核不通过！</string>
+    <string name="youfei">邮费：根据《米到仓物流专用金协议》，发送海关需支付订单邮费才可推送。</string>
+    <string name="bc_caigou">补充采购：添加商品如无库存，需补充支付对应商品采购费才可推送。</string>
+    <string name="getMobileCode_again">再一次获取验证码</string>
+    <string name="codeSendSuccessfully">验证码发送成功</string>
+    <string name="customerqq">3246405201</string>
+    <string name="customermobile">拨打客服热线:4000-998-337</string>
+    <string name="customermobilenum">4000998337</string>
+    <string name="worktime_montofri">周一~周五</string>
+    <string name="worktime_statosun">周六~周日</string>
+    <string name="worktime_montofri_hour">工作时间：9:00~21:00</string>
+    <string name="worktime_statosun_hour">工作时间：9:00~18:00</string>
+    <string name="question_1">1、米到仓是一个什么平台？</string>
+    <string name="question_2">2、米到仓的货源稳定吗？</string>
+    <string name="question_3">3、米到仓提供商品数据包服务吗?</string>
+    <string name="question_4">4、米到仓支持哪些支付方式？</string>
+    <string name="question_5">5、米到仓订单什么时候发货？大概多长时间可以收到货？</string>
+    <string name="question_6">6、同一个米到仓账号，能否同时绑定多家线上店铺？</string>
+    <string name="question_7">7、米到仓发货通关需要提供身份证报关吗？</string>
+    <string name="answer_1">米到仓是中国首家跨境电商进口服务平台，以“整合全球供应链服务中国消费市场”为使命，为客户提供数据对接为基础的全程供应链服务，努力打造跨境电商生态链，建立进口贸易新格局。全球跨境贸易背景下，进口商品供应商亟需快速拓展分销渠道，实现低成本扩张；大众创业的小微个体也需要优质的商品货源，实现低门槛开店。米到仓跨境电商服务平台有效连接进口商品供应商和分销商，“让跨境贸易电子商务从此变得简单”。</string>
+    <string name="answer_2">米到仓的货源供应商拥有专业的采购团队负责扫货、采购，保证我们的货源稳定持续供应。同时，米到仓拥有强大的技术、业务团队实时监控市场，及时安排采购保证安全库存。</string>
+    <string name="answer_3">米到仓平台已上传所有商品的数据包，供分销商下载。</string>
+    <string name="answer_4">米到仓目前支持支付宝支付。</string>
+    <string name="answer_5">一般商品，自您生成订单推送海关之日算起，经海关清关转国内快递配送，时效大约4-5天。米到仓平台订单页面会实时更新物流追踪信息。</string>
+    <string name="answer_6">米到仓后台系统支持多家店铺同时绑定，您可同时绑定淘宝、一号店等线上店铺。</string>
+    <string name="answer_7">米到仓商品需要清关后入境，根据海关要求，包裹收件人需要提交身份证正反面清晰照片进行个人物品入境申报（或者提供身份证号码），身份证信息将严格保管，仅限清关使用。</string>
+    <string name="about_us">\t\t米到网络科技有限公司创始于2002年，是一家专业从事企业软件与网络服务行业的的高科技企业，具有非常深厚的电商行业经验。管理团队包括来自国内知名互联网，金融，物流，媒体等企业的高管及资深专业人士。\n \t\t旗下的米到仓是中国首家跨境电商进口分销平台，以"整合全球供应链服务中国消费市场"为使命，为分销商提供数据对接为基础的全程供应链服务，努力打造跨境电商生态链，建立进口贸易新格局。\n \t\t旗下的壹店长电商ERP系统帮助供应商实现跨企业供应链管理，无缝对接海关、国检等监管平台和淘宝、微信等全网销售体系，是国内跨境电商领域市场占有率最高的软件品牌。\n \t\t全球跨境贸易背景下，我们帮助进口商品供应商快速拓展分销渠道，实现低成本扩张；为大众创业的小微个体提供优质的商品货源，实现低门槛开店。我们有效连接进口商品供应和分销，"让跨境贸易电子商务从此变得简单"。 </string>
+
+</resources>

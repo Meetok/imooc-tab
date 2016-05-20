@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="35dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_weight="0.67"
+            android:scaleType="centerInside"
+            android:src="@drawable/fanhui_shouye" />
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dip"
+            android:layout_weight="3"
+            android:gravity="center_vertical"         
+            android:text="商品详情"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+
+        <ImageView
+            android:id="@+id/shouye"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="7.5dip"          
+            android:scaleType="centerInside"
+            android:src="@drawable/fanhui_shouye"
+          />
+    </LinearLayout>
+
+   
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.imooc.tab03"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" >
+    </supports-screens>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.Meetok.Application.SysApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.Meetok.Tab.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+             android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.Meetok.fragment.HomeFragment" />
+        <activity android:name="com.Meetok.fragment.SaleFragment" />
+        <activity android:name="com.Meetok.fragment.ShoppingCartFragment" />
+        <activity android:name="com.Meetok.fragment.sale.Sale01Activity" >
+        </activity>
+        <activity android:name="com.Meetok.fragment.MeFragment" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.OrderNew"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.Meetok.Activity.TuWen_xiangqing"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.Serach_shouye"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.OrderQueRen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.OrderPay"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.fragment.Pur.AlreadyPaid_p"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.fragment.Pur.Canceled_p"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.fragment.Pur.NoPayment_p"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.Sale_xiangqing"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.AddSaleOrder"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.SaleDizhi"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.Sale_WeiCang"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Meetok.Activity.ShoppingCart2"
+            android:screenOrientation="portrait" >
+        </activity>
+                <activity
+            android:name="com.Meetok.Activity.Sale_xiangqing2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+                <activity
+            android:name="com.Meetok.Dizhi.choose.AddressChoose"
+            android:screenOrientation="portrait" >
+        </activity>
+                  <activity
+            android:name="com.Meetok.Dizhi.choose.PersonAddress"
+            android:screenOrientation="portrait" >
+        </activity>
+        <service android:name="com.Meetok.Dizhi.choose.landDivideServeice" />
+        <activity android:name="com.Meetok.Activity.LogActivity" />
+        <activity android:name="com.Meetok.Activity.RetrievePasswordActivity" />
+        <activity android:name="com.Meetok.Activity.RetrievePasswordCompeteActivity" />
+        <activity android:name="com.Meetok.Activity.RegisterActivity" />
+        <activity android:name="com.Meetok.Activity.RegisterCompeteActivity" />
+        <activity android:name="com.Meetok.Activity.PersonalImformation" />
+        <activity android:name="com.Meetok.Activity.modifypasswordActivity" />
+        <activity android:name="com.Meetok.Activity.CustomerService" />
+        <activity android:name="com.Meetok.Activity.CommonQuestionActivity" />
+        <activity android:name="com.Meetok.Activity.AboutUsActivity" />
+        <activity android:name="com.Meetok.Activity.MicroWarehouseStock" />
+        <activity
+            android:name="com.alipay.sdk.pay.PayDemoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- alipay sdk end -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/top_bg" >
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/fanhuijian" />
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_back"
+            android:layout_alignBottom="@+id/button_back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+            	android:layout_centerVertical="true"
+            	android:layout_marginTop="5dp"
+                android:background="@drawable/shape_90_green"
+                android:text="搜"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_frame"
+                android:hint="搜索关键词..."
+                android:paddingLeft="32dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:windowSoftInputMode="stateUnchanged" />
+
+            <ImageView
+                android:id="@+id/ivDeleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:src="@drawable/delete"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/mygrid_s"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rr"
+        android:fastScrollEnabled="false"
+        android:smoothScrollbar="true"
+        android:divider="@null"  >
+    </ListView>
+
+</RelativeLayout>

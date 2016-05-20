@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg" >
+
+        <LinearLayout
+            android:id="@+id/back_lin"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/fanhuijian"
+                android:layout_marginLeft="10dp"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="#ffffff"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- The PullToRefreshWebView replaces a standard WebView widget. -->
+
+    <com.jingchen.pulltorefresh.pullableview.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/linearLayout1" >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.jingchen.pulltorefresh.pullableview.PullableScrollView
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:background="#EDEDED" >
+           
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <com.Meetok.View.MyListView
+            android:id="@+id/cart2_shopping_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#808080"
+            android:dividerHeight="0.5dp" >
+        </com.Meetok.View.MyListView>
+</LinearLayout>
+        </com.jingchen.pulltorefresh.pullableview.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </com.jingchen.pulltorefresh.pullableview.PullToRefreshLayout>
+ <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <!-- 全选的布局 -->
+
+            <CheckBox
+                android:id="@+id/quanxuan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="全选" />
+            <!-- 合计的布局 -->
+
+          <TextView
+                android:id="@+id/heji2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="总价：￥"
+                android:textColor="#F63A19" />
+          
+            <TextView
+                android:id="@+id/heji"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingRight="10dp"
+                android:text="0.0"
+                android:textColor="#F63A19" />
+            <!-- 去结算的布局 -->
+
+            <TextView
+                android:id="@+id/jiesuan_button2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="结算" />
+        </LinearLayout>
+   
+</RelativeLayout>

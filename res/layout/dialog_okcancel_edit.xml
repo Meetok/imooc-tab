@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/edit_message"
+                style="@style/text_16_666666"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_10_biankuang"
+                android:gravity="center"
+                android:inputType="textNoSuggestions|number"
+                android:lineSpacingMultiplier="1.5"
+                android:maxLength="10"
+                android:minHeight="70.0dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg" >
+
+        <LinearLayout
+            android:id="@+id/commonquestion_returnback"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/fanhuijian"
+                android:layout_marginLeft="10dp"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:gravity="center"
+                android:text="常见问题"
+                android:textColor="#ffffff"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+					<TextView 
+					    android:id="@+id/question_1"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:text="@string/question_1"
+					    android:background="#FFFFFF"
+					    android:textSize="18sp"/>
+					<LinearLayout 
+					    android:layout_width="fill_parent"
+                    	android:layout_height="2dp"
+                    	android:background="#C0C0C0">
+					    
+					</LinearLayout>
+					<TextView 
+					    android:id="@+id/answer_1"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#F6F6F6"
+					    android:text="@string/answer_1"
+					    android:textSize="18sp"
+					    android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+					<TextView 
+					    android:id="@+id/question_2"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#FFFFFF"
+					    android:text="@string/question_2"
+					    android:textSize="18sp"/>
+					<LinearLayout 
+					    android:layout_width="fill_parent"
+                    	android:layout_height="2dp"
+                    	android:background="#C0C0C0">
+					    
+					</LinearLayout>
+					<TextView 
+					    android:id="@+id/answer_2"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#F6F6F6"
+					    android:text="@string/answer_2"
+					    android:textSize="18sp"
+					    android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+					<TextView 
+					    android:id="@+id/question_3"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#FFFFFF"
+					    android:text="@string/question_3"
+					    android:textSize="18sp"/>
+					<LinearLayout 
+					    android:layout_width="fill_parent"
+                    	android:layout_height="2dp"
+                    	android:background="#C0C0C0">
+					    
+					</LinearLayout>
+					<TextView 
+					    android:id="@+id/answer_3"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#F6F6F6"
+					    android:text="@string/answer_3"
+					    android:textSize="18sp"
+					    android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+					<TextView 
+					    android:id="@+id/question_4"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#FFFFFF"
+					    android:text="@string/question_4"
+					    android:textSize="18sp"/>
+					<LinearLayout 
+					    android:layout_width="fill_parent"
+                    	android:layout_height="2dp"
+                    	android:background="#C0C0C0">
+					    
+					</LinearLayout>
+					<TextView 
+					    android:id="@+id/answer_4"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#F6F6F6"
+					    android:text="@string/answer_4"
+					    android:textSize="18sp"
+					    android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+					<TextView 
+					    android:id="@+id/question_5"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#FFFFFF"
+					    android:text="@string/question_5"
+					    android:textSize="18sp"/>
+					<LinearLayout 
+					    android:layout_width="fill_parent"
+                    	android:layout_height="2dp"
+                    	android:background="#C0C0C0">
+					    
+					</LinearLayout>
+					<TextView 
+					    android:id="@+id/answer_5"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#F6F6F6"
+					    android:text="@string/answer_5"
+					    android:textSize="18sp"
+					    android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+					<TextView 
+					    android:id="@+id/question_6"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#FFFFFF"
+					    android:text="@string/question_6"
+					    android:textSize="18sp"/>
+					<LinearLayout 
+					    android:layout_width="fill_parent"
+                    	android:layout_height="2dp"
+                    	android:background="#C0C0C0">
+					    
+					</LinearLayout>
+					<TextView 
+					    android:id="@+id/answer_6"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#F6F6F6"
+					    android:text="@string/answer_6"
+					    android:textSize="18sp"
+					    android:visibility="gone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+					<TextView 
+					    android:id="@+id/question_7"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#FFFFFF"
+					    android:text="@string/question_7"
+					    android:textSize="18sp"/>
+					<LinearLayout 
+					    android:layout_width="fill_parent"
+                    	android:layout_height="2dp"
+                    	android:background="#C0C0C0">
+					    
+					</LinearLayout>
+					<TextView 
+					    android:id="@+id/answer_7"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:padding="10dp"
+					    android:background="#F6F6F6"
+					    android:text="@string/answer_7"
+					    android:textSize="18sp"
+					    android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

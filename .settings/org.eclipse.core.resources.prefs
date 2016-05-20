@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/com/Meetok/Activity/BaseActivity.java=UTF-8
+encoding//src/com/Meetok/Entity=UTF-8
+encoding//src/com/Meetok/Entity/ParseJSONTools.java=UTF-8
+encoding//src/com/Meetok/Tab/ADInfo.java=UTF-8
+encoding//src/com/Meetok/Tab/ImageCycleView.java=UTF-8
+encoding//src/com/Meetok/Tab/ImmersionBar.java=UTF-8
+encoding//src/com/Meetok/Tab/SystemBarTintManager.java=UTF-8
+encoding//src/com/Meetok/Util/NetWorkUtil.java=UTF-8
+encoding//src/com/Meetok/adapter/Adapter_gouwuche.java=UTF-8
+encoding//src/com/jingchen/pulltorefresh/pullableview/MyListener.java=UTF-8
+encoding//src/com/jingchen/pulltorefresh/pullableview/PullToRefreshLayout.java=UTF-8
+encoding/<project>=UTF-8

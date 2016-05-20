@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:descendantFocusability="blocksDescendants"表示覆盖子空间获取焦点，解决itemclick无效的问题 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <!-- 小对勾的布局 -->
+
+            <CheckBox
+                android:id="@+id/pro_checkbox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <!-- 图片布局 -->
+
+            <ImageView
+                android:id="@+id/iv_adapter_list_pic"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1.5"
+                android:scaleType="centerCrop" />
+            <!-- 商品名称和价格的布局 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:orientation="vertical" >
+
+                <!-- 商品名称的布局 -->
+
+                <TextView
+                    android:id="@+id/iv_adapter_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="连衣裙女夏季" />
+                <!-- 价格的布局 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/iv_adapter_DisPurchasePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:text="采购价：￥88"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:orientation="horizontal" >
+
+                    <!-- 减号 -->
+
+                    <ImageView
+                        android:id="@+id/gwc_left"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/left" />
+
+                    <TextView
+                        android:id="@+id/gwc_input"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/input"
+                        android:gravity="center"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/gwc_right"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/gwc_shanchu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="删除" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="小计（元）：￥" />
+
+            <TextView
+                android:id="@+id/xioaji"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="666" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

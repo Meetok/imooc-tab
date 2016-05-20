@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context=".TabHostActivity"
+     >
+
+    <RelativeLayout
+        android:id="@+id/show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/menu_bottom" >
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:layout_alignParentBottom="true"
+        android:background="#e6e6e6"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+              >
+
+            <ImageView
+               android:id="@+id/iv_menu_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shouye" />
+
+            <TextView
+                android:id="@+id/t_0"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+
+            <ImageView
+               android:id="@+id/iv_menu_1" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gouwuche" />
+
+            <TextView
+                android:id="@+id/t_1"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+
+            <ImageView
+                android:id="@+id/iv_menu_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jinhuo" />
+
+            <TextView
+                android:id="@+id/t_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="采购进货"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+
+            <ImageView
+               
+                android:id="@+id/iv_menu_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fahuo" />
+
+            <TextView
+                android:id="@+id/t_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="销售发货"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" 
+             android:id="@+id/ll"
+            >
+
+            <ImageView
+                android:id="@+id/iv_menu_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mine" />
+
+            <TextView
+                android:id="@+id/t_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="#000000"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

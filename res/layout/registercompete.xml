@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/registercompete_returnback"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/fanhuijian"
+                android:layout_marginLeft="10dp"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:gravity="center"
+                android:text="完成注册"
+                android:textColor="#ffffff"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="手机号"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" >
+			<TextView
+			    android:id="@+id/registercompete_mobile_tv"
+			    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:textSize="18sp">
+			</TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="姓名"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" >
+			<EditText
+			    android:id="@+id/registercompete_name_et"
+			    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="请填写姓名"
+                android:background="@null"
+                android:gravity="left">
+			    
+			</EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="密码"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" >
+			<EditText
+			    android:id="@+id/registercompete_password_et"
+			    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="英文+数字，长度至少8位"
+                android:password="true"
+                android:background="@null"
+                android:gravity="left">
+			    
+			</EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="确认密码"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left" >
+			<EditText
+			    android:id="@+id/registercompete_passwordagain_et"
+			    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="确认密码"
+                android:password="true"
+                android:background="@null"
+                android:gravity="left">
+			    
+			</EditText>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/tabbar_bg"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/registercompete_bt"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="完成注册"
+            android:textColor="#FDBC68"
+            android:textSize="24sp"
+            android:background="@drawable/shape_10_qianhuang">
+            
+        </Button>
+    </LinearLayout>
+</LinearLayout>
